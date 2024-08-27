@@ -1,52 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Imitation is largely useless without creativity !!</title>
+    <title>projects@AIxMed</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="mystyle.css" />
 </head>
 <body>
-    <!-- define navigation/menu -->
-    <div class="topnav" id="Topnav">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="services.html">Services</a>
+    <!-- mega menu -->
+    <div class="menubar" id="TOPNAV">
+        <div class="logo">
+            <a href="#home"><img src="images/cyto-logo.png" width="100%" /></a>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">PROJECT<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="project/bluejay.html">BlueJay</a>
+                <a href="project/bluedoc.html">Documentation</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
+
     <!-- define sidebar / aside -->
-    <div class="w3-content w3-section" style="max-width:800px">
+    <div style="padding: 16px;">
         <img class="mySlides w3-animate-fading" src="images/page1.png" style="width:100%">
         <img class="mySlides w3-animate-fading" src="images/page2.png" style="width:100%">
         <img class="mySlides w3-animate-fading" src="images/page3.png" style="width:100%">
-    </div>
-    <script>
-        var idx = 0;
-        carousel();
+        <script>
+            var idx = 0;
+            carousel();
 
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
 
-            for (i=0; i < x.length; i++) {
-                x[i].style.display = "none";
+                for (i=0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                idx ++;
+                if (idx > x.length) { idx = 1; }
+                x[idx-1].style.display = "block";
+                setTimeout(carousel, 9000);
             }
-            idx ++;
-            if (idx > x.length) { idx = 1; }
-            x[idx-1].style.display = "block";
-            setTimeout(carousel, 9000);
+        </script>
+    </div>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("TOPNAV");
+          if (x.className === "menubar") {
+            x.className += " responsive";
+          } else {
+            x.className = "menubar";
+          }
         }
-    </script>
+        </script>
+        
     <!-- footer -->
     <footer>
-        <center><font color="#000080" size="2">
+        <center><font size="2">
             <img src="images/avatar.png" height="24" width="24" align="middle" />
-            Copyright &copy; Philip Wu. All Rights Reserved.</font><br>
-        <font color="#000080" size="1"><b>Last Modification:</b><i>
+            Copyright &copy; <b>Philip Wu</b>. All Rights Reserved.</font><br>
+        <font size="1">Last Modification:<i>
             <script language="JavaScript">
             document.write(document.lastModified)
             </script></i>
         </font><br>
+        </center>
     </footer>
 </body>
 </html>
