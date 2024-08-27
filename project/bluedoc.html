@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Documentation of Bluejay Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../mystyle.css" />
+    <link rel="stylesheet" type="text/css" href="mydocs.css" />
+</head>
+<body>
+    <!-- mega menu -->
+    <div class="menubar" id="TOPNAV">
+        <div class="logo">
+            <a href="../index.html"><img src="../images/cyto-logo.png" width="100%" /></a>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">PROJECT<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="../project/bluejay.html">BlueJay</a>
+                <a href="../project/bluedoc.html">Documentation</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">HIDDEN<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+				<a href="../hidden/template.html">Template</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <!-- content -->
+    <div style="padding: 16px;">
+        <div id="product-docs">
+            <h2>Design Documents</h2>
+            <div>
+			    <table>
+				    <tr>
+					    <td class="tbl-cat valign="top">User Needs & Requirements:&nbsp;</td>
+						<td class="tbl-doc">
+						    <select id="user_needs" onChange="location=this.options[this.selectedIndex].value;">
+							    <option value="#">Choose one ...</optoin>
+								<option value="https://docs.google.com/document/d/154Wo2mODsAvw9p8Y5PwzDrmNZP6Z-G4H/">User Needs for v2</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("TOPNAV");
+          if (x.className === "menubar") {
+            x.className += " responsive";
+          } else {
+            x.className = "menubar";
+          }
+        }
+    </script>
+    <!-- footer -->
+    <footer>
+        <center><font size="2">
+            <img src="../images/avatar.png" height="24" width="24" align="middle" />
+            Copyright &copy; <b>Philip Wu</b>. All Rights Reserved.</font><br>
+        <font size="1">Last Modification:<i>
+            <script language="JavaScript">
+            document.write(document.lastModified)
+            </script></i>
+        </font><br>
+        </center>
+    </footer>
+</body>
+</html>
