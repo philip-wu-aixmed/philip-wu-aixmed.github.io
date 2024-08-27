@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reference Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../mystyle.css" />
+    <link rel="stylesheet" type="text/css" href="../project/endpoint.css" />
+    <script type="text/javascript" src="../project/showapi.js"></script>
+</head>
+<body>
+    <!-- mega menu -->
+    <div class="menubar" id="TOPNAV">
+        <div class="logo">
+            <a href="../index.html"><img src="../images/cyto-logo.png" width="100%" /></a>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">PROJECT<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="../project/bluejay.html">BlueJay</a>
+                <a href="../project/bluedoc.html">Documentation</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <!-- content -->
+    <div style="padding: 16px;">
+        <div id="product-docs">
+            <h2>Overview of AIxURO Heuristic Imager</h2>
+            <p>
+                Urine cytology slides are loaded into and scanned by the AIxURO Heuristic Imager with a disease-specific AI algorithm.  
+                The AIxURO Heuristic Imager identifies and scans the regions of taget cells at different layers with the optimal focal surface plane.
+            </p>
+        </div>
+            
+        <div class="functab">
+            <button class="tablinks" onmouseover="openCity(event, 'goals')">Goal</button>
+            <button class="tablinks" onmouseover="openCity(event, 'specs')">HW/SW Specification</button>
+        </div>
+        <div id="goals" class="tabcontent">
+            <h3>Business Goal</h3>
+            <p>
+                The long-term vision of Hscan scan software is to efficiently generate quality digital slide images for research purpose, for further analyzing and identifying potential atypical cells by AIxMed proprietary AI model.
+                Hscan is a software solution to implement AIxMed IP scanning method on partner's scanner hardware platform with brightfield imaging mode, 4x objective lens and 20x objective lens.
+            </p>
+			<h4>Goal of Version 1</h4>
+			<p>Development of cytology scanner for clinical research</p>
+			<ul class="d">
+			    <li>Implement AIxMed <a href="https://patents.google.com/patent/US11416990B1/en?oq=11416990">IP technology, heuristic scan method</a>, on HW partner's scanner instrucment by integrating partner's HW API Lib/DLL for controlling scanner platform to produce most focal surface plane of cytology slide images</li>
+				<li>Scanner product is capable for FDA clearance or approval</li>
+			</ul>
+			<i><small>2022-10-01 ~ 2023-06-30 (software simulation)</small></i>
+			<i><small>2023-07-01 ~ 2024-03-31 (testbed / prototype)</small></i>
+			<h4>Goal of Version 1.1</h4>
+			<ul class="d">
+			    <li>One click to automatically produce quality images available to AIxURO inference under the efficiency of 10 slides completed within one hour</li>
+			</ul>
+			<i><small>2024-04-01 ~ 2024-08-31</small></i>
+        </div>
+        <div id="specs" class="tabcontent">
+            <h3>Specification of Scanner Workstation</h3>
+			<table border="0">
+			    <tr>
+				    <td>Model</td>
+					<td>Dell Precision Tower 5820</td>
+				</tr>
+			    <tr>
+				    <td>Processor</td>
+					<td>Intel Xeon W-2255</td>
+				</tr>
+			    <tr>
+				    <td>Memory</td>
+					<td>64GB => upgraded to 192GB</td>
+				</tr>
+				<tr><td>GPU</td><td>NVIDIA RTX5000</td></tr>
+				<tr><td>Boot Drive</td><td>1TB SSD</td></tr>
+				<tr><td>Image Storage Drive</td><td>5.5TB (3x2TB HDD in RAID 0)</td></tr>
+			    <tr><td>Add-in PCIe Cards</td>
+					<td><ul class='g'>
+					    <li>USB3 (powered)</li>
+						<li>NIC (2 port GigE, maybe specified as 10GigE)</li>
+						<li><a href="https://copleycontrols.com/products/can-pci-02/">CAN interface</a>: Copley CAN driver v1.28.0-1</li>
+						<li>Frame grabber: <a href="https://www.adimec.com/cameras/machine-vision-cameras-for-inline-inspections-and-metrology/sapphire-series/the-sapphire-s-25a80-camera-delivers-superior-performance/">Adimec S-25A80-Gc/CXP-6</a></li>
+					</ul></td>
+				</tr>
+				<tr><td>Available PCIe Slots</td>
+				    <td><ul class='f'>
+					    <li>(5 PCIe slots and 1 PCI slot on the motherboard)</li>
+						<li>4 PCIe slots occupied by GPU, USB, Ethernet, Frame grabber</li>
+					</ul></td>
+				</tr>
+                <tr><td>Monitor</td><td>Dell Ultrasharp U2722D</td></tr>				
+			</table>
+        </div>
+
+        <div class="clearfix"></div>
+		
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("TOPNAV");
+          if (x.className === "menubar") {
+            x.className += " responsive";
+          } else {
+            x.className = "menubar";
+          }
+        }
+    </script>
+    <!-- footer -->
+    <footer>
+        <center><font size="2">
+            <img src="../images/avatar.png" height="24" width="24" align="middle" />
+            Copyright &copy; <b>Philip Wu</b>. All Rights Reserved.</font><br>
+        <font size="1">Last Modification:<i>
+            <script language="JavaScript">
+            document.write(document.lastModified)
+            </script></i>
+        </font><br>
+        </center>
+    </footer>
+</body>
+</html>
