@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reference Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../mystyle.css" />
+    <link rel="stylesheet" type="text/css" href="../project/endpoint.css" />
+    <script type="text/javascript" src="../project/showapi.js"></script>
+</head>
+<body>
+    <!-- mega menu -->
+    <div class="menubar" id="TOPNAV">
+        <div class="logo">
+            <a href="../index.html"><img src="../images/cyto-logo.png" width="100%" /></a>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">PROJECT<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="../project/bluejay.html">BlueJay</a>
+                <a href="../project/bluedoc.html">Documentation</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">SERVICE<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="../service/tech_service.html">Customers Service</a>
+                <a href="../service/auto_service.html">Inference Service</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <!-- content -->
+    <div style="padding: 16px;">
+        <div id="product-docs">
+            <h2>Auto Inference Service for Clinical Team</h2>
+			<img src="../images/page3.png" width="80%" />
+
+            <h2>Summary of Model Inference Services</h2>
+            <div>
+                <blockquote><ul>
+                    <li><a href="https://docs.google.com/spreadsheets/d/1yZ_G_8_ZHIf0go2vv1fr5Kcge0Ebjn14/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">Results of Model Inference</a></li>
+                </ul></blockquote>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+		
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("TOPNAV");
+          if (x.className === "menubar") {
+            x.className += " responsive";
+          } else {
+            x.className = "menubar";
+          }
+        }
+    </script>
+    <!-- footer -->
+    <footer>
+        <center><font size="2">
+            <img src="../images/avatar.png" height="24" width="24" align="middle" />
+            Copyright &copy; <b>Philip Wu</b>. All Rights Reserved.</font><br>
+        <font size="1">Last Modification:<i>
+            <script language="JavaScript">
+            document.write(document.lastModified)
+            </script></i>
+        </font><br>
+        </center>
+    </footer>
+</body>
+</html>
