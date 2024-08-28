@@ -22,9 +22,10 @@
             </div>
         </div>
         <div class="dropdown">
-            <button class="dropbtn">HIDDEN<i class="fa fa-caret-down"></i></button>
+            <button class="dropbtn">SERVICE<i class="fa fa-caret-down"></i></button>
             <div class="dropdown-content">
-				<a href="../hidden/template.html">Template</a>
+                <a href="../service/tech_service.html">Customers Service</a>
+                <a href="../service/auto_service.html">Inference Service</a>
             </div>
         </div>
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
@@ -34,18 +35,236 @@
     <div style="padding: 16px;">
         <div id="product-docs">
             <h2>Design Documents</h2>
+            <h2>Design Documents</h2>
             <div>
-			    <table>
-				    <tr>
-					    <td class="tbl-cat valign="top">User Needs & Requirements:&nbsp;</td>
-						<td class="tbl-doc">
-						    <select id="user_needs" onChange="location=this.options[this.selectedIndex].value;">
-							    <option value="#">Choose one ...</optoin>
-								<option value="https://docs.google.com/document/d/154Wo2mODsAvw9p8Y5PwzDrmNZP6Z-G4H/">User Needs for v2</option>
-							</select>
-						</td>
-					</tr>
-				</table>
+		<blockquote><table>
+		    <tr>
+		    <td class="tbl-cat" valign="top">User Needs & Requirements:&nbsp;</td>
+		    <td class="tbl-doc">
+		        <select id="user_needs" onChange="location=this.options[this.selectedIndex].value;">
+			<option value="#">Choose one ...</option>
+			<option value="https://docs.google.com/document/d/154Wo2mODsAvw9p8Y5PwzDrmNZP6Z-G4H/">User Needs for v2</option>
+			</select>
+		    </td>	    
+		    </tr>
+		    <tr>
+			<td class="tbl-cat" valign="top">Hscan Software Design:&nbsp;</td>
+			<td class="tbl-doc">
+			    <select id="user_needs" onChange="location=this.options[this.selectedIndex].value;">
+			    <option value="#">Choose one ...</option>
+			    <option value="https://docs.google.com/document/d/1RTADfXsqm1rtfSrPw34Rb69l0RE_Yuyq/edit#heading=h.gjdgxs">Software Design for Bluejay v0.5</option>
+			    <option value="https://docs.google.com/document/d/11gvENEiuSFsvAlgfEEZuLdUUiaCFCD65/edit#heading=h.gjdgxs">API Requirement for Bluejay v1.0.10</option>
+			    <option value="https://docs.google.com/document/d/1iTNvhxqTdEIRcZKcR6NYG378oHFf4XqB/edit">Hscan Incremental Improvement Plan for v1.1 Requirement</option>
+			    <option value="https://docs.google.com/presentation/d/1ztMiYoJBWkKBQdzlJbaagXIEnIxEZ5wX/edit#slide=id.p1">Hscan Software Design -- method and algorithm</option>
+		 	    </select>
+			</td>
+		    </tr>
+		</table></blockquote>
+            </div>
+            <h2>Partner(Huron) Documents</h2>
+            <div>
+		<blockquote><ul>
+		    <li><a href="https://docs.google.com/presentation/d/1ogC-4l17BFbadibUv9TLZUEP3dAIY8gY/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">BER-0028E AIxMed HW&SW Functional Requirements</a>
+		    <li><a href="https://docs.google.com/document/d/1xovPCZ1IIrx3hr9m7EZF74sPNifcRSco/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">PRA-0007E Bluejay Project Risk Analysis</a>
+		</ul>
+		<table>
+		    <tr>
+		    <td class="tbl-cat" valign="top">Hardware Design:&nbsp;</td>
+		    <td class="tbl-doc">
+			<select id="user_needs" onChange="location=this.options[this.selectedIndex].value;">
+			<option value="#">Choose one ...</option>
+			<option value="https://docs.google.com/document/d/1YXdHtYirTNXGfy1xDyUnsKNePshvKhiA/edit">TPR-0124 Prototype #101 Unpacking Instructions</option>
+                        <option value="https://docs.google.com/document/d/128kEi9HKS1d2ZJhNGwpSYejIXCqSoows/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">Discussion on hardware consideration</option>
+                        <option value="https://drive.google.com/file/d/1E0q5LWV-PXmil0wIUbiFq-aHbbAAFGW_/view?usp=sharing">ARD-0026 AIxMed Scanner Hardware Architecture Block Diagram</option>
+                        <option value="https://docs.google.com/presentation/d/1ogC-4l17BFbadibUv9TLZUEP3dAIY8gY/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">ARD-0028 AIxMed Scanner Hardware Architecture</option>
+			<option value="https://drive.google.com/file/d/1YCeLMStwO9a2Xyz780mBcGk7N2BP1mKI/view?usp=sharing">ARD-0032E Bluejay Optical Schematic</option>
+                        <option value=""></option>
+		        </select>
+		    </td>
+		    </tr>
+		    <tr>
+		        <td class="tbl-cat" valign="top">Software Design / Scan Workflow:&nbsp;</td>
+			<td class="tbl-doc">
+			    <select id="user_needs" onChange="location=this.options[this.selectedIndex].value;">
+			    <option value="#">Choose one ...</option>
+			    <option value="https://docs.google.com/presentation/d/1-NNc4d_dzMM9BXz_bolUj-AdJv6ElTWQ/edit#slide=id.p1">ADR-0030E Cytology slide scanner workflow overview</option>
+			    <option value="https://docs.google.com/presentation/d/1kf7SP-rzoi-033xFRzVpUZfGF2JE2AGU/edit#slide=id.p1">TissueScope Scanning Process</option>
+			    <option value="https://docs.google.com/document/d/1jc3Rs12BRVkbYrUTwiinyG6Ok_L5ZYk-/edit">Scan time estimates for AIxMed slides</option>
+			    <option value="https://docs.google.com/document/d/1P_aPXoUhqv5bS0PMDSDgxbdfZegZtoTk/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">SFD-0001 LE Scan Flowchart Document</option>
+                            <option value="https://docs.google.com/presentation/d/16Rwz7jYzJhZj1iVC6ifwmegnVsr2uIG6/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">API architecture</option>
+                            <option value="https://docs.google.com/document/d/1zUzVeC5hDUvU2p2tf184u43D7QVXRs7B/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">Bluejay SW Architecture v1.1</option>
+                            <option value="https://docs.google.com/document/d/1y0NM0SzA9KzGuo8OxJQlbQN7Og0Dy-k3/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">TPR-0104 AIxMed TSLE Funtionality Configurator</option>
+                            <option value=""></option>
+			    </select>
+			</td>
+		    </tr>
+		    <tr>
+		        <td class="tbl-cat" valign="top">Monitoring and Maintenance:&nbsp;</td>
+			<td class="tbl-doc">
+			    <select id="user_needs" onChange="location=this.options[this.selectedIndex].value;">
+			    <option value="#">Choose one ...</option>
+		 	    <option value="https://drive.google.com/file/d/1nd9F4P8mx-pPnKRf7u8pez5AIMhT3AcP/view">TPR-0113 Monitoring z-stack progression</option>
+			    <option value="https://docs.google.com/document/d/12tsGmSYsoXtrVr62aSnjlVtK4lFfriry/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">TPR-0118 TSLE Image Sharpness Report</option>
+			    <option value="https://docs.google.com/presentation/d/1Ajl0QX4rmqOmXnnmrmhvtbzQ6PY-ujdO/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">WSI colour consideration</option>
+		  	    <option value="https://drive.google.com/file/d/1lP1Z38eeJET8ycu-RvSDndCY3sBcPVm-/view?usp=sharing">Huron Color Calibration Delta E Calculation</option>
+                            <option value="https://docs.google.com/document/d/1RJv4KJyVuhzcRPTlcpKNHzbgXwLyTCjo/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">TPR-0120 Huron Color Calibration</option>
+			    <option value="https://docs.google.com/presentation/d/19IvKALtU2INMrpbwhw5HqvDkigijVAiW/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">TPR-0143E Cytology slide scanner 40x image quality investigation</option>
+			    <option value="https://docs.google.com/document/d/1aw2z9tuzauHGJDxFTYIG8N-X7JWdQYc4/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">Instruction for setting up Strobe Controller</option>
+                            <option value="https://docs.google.com/presentation/d/1SPI_bE5L7kmOwTls19xJ2apx0j0eNC1w/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">Theoretical scan times for 7 slices 23x23 mm</option>
+			    </select>
+			</td>
+		    </tr>
+		    <tr>
+		        <td class="tbl-cat" valign="top">DVM Test:&nbsp;</td>
+			<td class="tbl-doc">
+			    <select id="user_needs" onChange="location=this.options[this.selectedIndex].value;">
+			    <option value="#">Choose one ...</option>
+			    <option value="https://docs.google.com/document/d/1igK37KDIuvqmKmLaQKu4WMbylYIAXU9_/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">TPL-0047 TSLE Bluejay Usability Test Plan</option>
+			    <option value="https://docs.google.com/document/d/10MQY1k2Amn6T3GnMkh-0790R5eZUGSco/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">TPL-0050 Verification Test Plan
+			    <option value="https://docs.google.com/document/d/1dgFN2d4p-Dj--MhO8zPy1-I9TJCK5bgG/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">TPR-0132 Turret Repeatability Test</option>
+			    <option value="https://docs.google.com/document/d/16BiS9a72SEoJ5SfLmZXPWCCEqni8Uyb4/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">TPR-0133 Bluejay Scanner Thermal Test</option>
+			    <option value="https://docs.google.com/spreadsheets/d/190rEowoIlFB7hMntIIq-ZYJbZWGHZUgt/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">DVM-0019E Project Bluejay DVM</option>
+			    </select>
+			</td>
+		    </tr>
+		</table>
+		<ul>
+		    <li><a href="https://drive.google.com/drive/folders/1mhrca3nwxHOHUnTttPn3kHHeiz8hO4NM?usp=sharing">Huron Installation Package</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/154tt4Dw1uQLvEBXagOPm_VEqBF24XblC?usp=sharing">Huron released software</a></li>
+		    <li><a href="https://drive.google.com/file/d/1xcDzdwZ6F7hot2YjyRBCHO7a63RViBgk/view?usp=sharing">TissueScope&trade; LE Digital Slide Scanner User Manual</a>
+		    <li><a href="https://drive.google.com/file/d/1RcJPN3EkFE_mNoOO6ohNsZaZfkbKlQ_Z/view?usp=sharing">Huron Image Format Description</a>
+		    <li><a href=""></a>
+		</ul></blockquote>
+            </div>
+            <h2>Status Report</h2>
+            <div>
+	        <blockquote><table>
+	        <tr>
+		    <td class="tbl-cat" valign="top">AIxMed Weekly:&nbsp;</td>
+	  	    <td class="tbl-doc">
+		        <select id="user_needs" onChange="location=this.options[this.selectedIndex].value;">
+			<option value="#">Choose one ...</option>
+			<option value="https://docs.google.com/presentation/d/1P0uP9ErdgnpgoAaQELeEYTm6vZPo1LeA/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">weekly_syncup_engineering_bluejay_2024</option>
+			<option value="https://docs.google.com/presentation/d/1vI6p1nttEKcrFiTd6FOqTnCUEdHZPyPZ/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">weekly_syncup_engineering_bluejay_2023</option>
+			<option value="https://docs.google.com/presentation/d/16srid2cOJVfMJlgwjYgMs9ZWlRtc8zCH/edit#slide=id.p1">weekly_syncup_engineering_bluejay_2022</option>
+			</select>
+		    </td>
+		</tr>
+		<tr>
+		    <td class="tbl-cat" valign="top">Status Update:&nbsp;</td>
+		    <td class="tbl-doc">
+		        <select id="user_needs" onChange="location=this.options[this.selectedIndex].value;">
+			<option value="#">Choose one ...</option>
+			<option value="https://docs.google.com/presentation/d/1ntYtWpyr-1KtoingPymBZmfyqF6OQH74/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-08-06</option>
+			<option value="https://docs.google.com/presentation/d/1Hucq2EtVT82FJ2mmZGwqj6-1DoJEgHP4/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-07-15</option>
+			<option value="https://docs.google.com/presentation/d/1xhQx_CDEXXPKlDPQJMbdPsgkZXKYrA7P/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-07-01</option>
+			<option value="https://docs.google.com/presentation/d/1U3o3CojI0SsU_mNsTGrZlNCkLArZu1cL/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-06-21</option>
+			<option value="https://docs.google.com/presentation/d/1f-Nn3bODqYlltaLBbBHi2vHByqvcjI19/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-06-16</option>
+			<option value="https://docs.google.com/presentation/d/1xhQx_CDEXXPKlDPQJMbdPsgkZXKYrA7P/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-03-18</option>
+			<option value="https://docs.google.com/presentation/d/1DXfUPFt0a0xCAxs1HD8OY-njY7j4YX3R/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-02-27</option>
+			<option value="https://docs.google.com/presentation/d/1_h3EMeyuC9e_EuZn_0u7RuI2AOuLh8wT/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-02-20</option>
+			<option value="https://docs.google.com/presentation/d/1mM2djaBu_0agt8eMGKHx9CbciWVh-PIk/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-02-05</option>
+			<option value="https://drive.google.com/file/d/1O-o6MAnnKBi-1bhSk77WdZVohAb5y-Ds/view?usp=sharing">2024-01-31</option>
+			<option value="https://docs.google.com/presentation/d/12zkun0eDyK5vSiH_9WZqwSBZOWlrxCC8/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-01-16</option>
+			<option value="https://docs.google.com/presentation/d/1qe72cGUjcykYp3di6p7NcgFBgGlXoG2n/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-01-02</option>
+			<option value="https://docs.google.com/presentation/d/1L3QTdsqeIdJLcqiKqAUxJxaytYJnk9Tq/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-12-29</option>
+			<option value="https://docs.google.com/presentation/d/1O1tWw5p6mqoHDE_O8jzRkYtzT4f2U7B-/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-12-18</option>
+			<option value="https://docs.google.com/presentation/d/1Xb50glt8mwC-lYZlD99naMWthKXdl-X1/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-12-13</option>
+			<option value="https://docs.google.com/presentation/d/1peT1NWObKovCJQmKZsIXmtQVExhGZoRU/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-12-04</option>
+			<option value="https://docs.google.com/presentation/d/15LwSuiR8o1XpACpAFjRX_EkKpbk-hoNB/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-11-30</option>
+			<option value="https://docs.google.com/presentation/d/1I9nUy0r2-n7BiIziHNtQUytGtaQL90Ri/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-11-07</option>
+			<option value="https://docs.google.com/presentation/d/1MNsCIND1HKnpUOyPKGwo-h_yFisY4VLF/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-10-23</option>
+			<option value="https://docs.google.com/presentation/d/1zAasWGqsyin4jO6dZQrIf2CvEboPfgcn/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-08-23</option>
+			</select>
+		    </td>
+		</tr>
+		<tr>
+		    <td class="tbl-cat" valign="top">Weekly Syncup with Huron:&nbsp;</td>
+		    <td class="tbl-doc">
+			<select id="user_needs" onChange="location=this.options[this.selectedIndex].value;">
+			<option value="#">Choose one ...</option>
+			<option value="https://docs.google.com/presentation/d/1qAE3vINP9y6HNIB9PUgW3Zgm5GsCPVBq/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-08-20</option>
+			<option value="https://docs.google.com/presentation/d/13RYXhBDEggnWdc19k58Rrvi7ijnfTcCj/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-07-30</option>
+			<option value="https://docs.google.com/presentation/d/1HZHT9YZYNEoWdAs5Cv5Q26JEc5bDzFL8/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-07-23</option>
+			<option value="https://docs.google.com/presentation/d/1lLYUoAWm11BxaUfLmI8EZWrcZ8HhIumu/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-07-16</option>
+			<option value="https://docs.google.com/presentation/d/1NGIg0Je0hqo0CkAafmjrb_GquvZt7XvA/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-07-02</option>
+			<option value="https://docs.google.com/presentation/d/1ZyzQIaVKD7OTx72zKMX6iXERI0eGOZEv/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-06-25</option>
+			<option value="https://docs.google.com/presentation/d/1STMVh0jKJHXwuxFldFLEA0u_DBGRW9ar/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-06-11</option>
+			<option value="https://docs.google.com/presentation/d/1vw8Ed3rZLTZTeU7r97EdNbRR3s-SRdZw/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-05-28</option>
+			<option value="https://docs.google.com/presentation/d/1fzMYScStBhZG3pTRl-_JTlQ3O3sH7AKF/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-05-21</option>
+			<option value="https://docs.google.com/presentation/d/1kwk58hSgogNDkoJBRIoedntXNyGDLs1s/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-05-14</option>
+			<option value="https://docs.google.com/presentation/d/1NLMOyUtNQOdpbSv7Unlrm1LDyOO5QHH8/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-05-07</option>
+			<option value="https://docs.google.com/presentation/d/1XFVoTA9Matk2Z8hpQyVvCmEUjWjijW77/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-04-30</option>
+			<option value="https://docs.google.com/presentation/d/13wIv8AjOpMGhzyGiKo-ojcPgsWRiaI7o/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-04-23</option>
+			<option value="https://docs.google.com/presentation/d/1MPWkz80k3BXW1-zecHiA79_NhY0C9qTs/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-04-16</option>
+			<option value="https://docs.google.com/presentation/d/1WfXUeJI9HNASZ1u4VHcfdfC9drxTT6rf/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-04-09</option>
+			<option value="https://docs.google.com/presentation/d/1LqDB6XCZv-2s0qqS7UdRqNvsMUiahvEH/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-04-01</option>
+			<option value="https://docs.google.com/presentation/d/14XagQo21HnbLWM5_FsDnNUATLO0l8jCa/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-03-19</option>
+			<option value="https://docs.google.com/presentation/d/1cSYv59LuV8TOBFM25gngo4ilzpDDq9zE/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-03-05</option>
+			<option value="https://docs.google.com/presentation/d/1Dkb5RZCW2LddQgHJ59SIKKbNMbqMUTNO/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-02-27</option>
+			<option value="https://docs.google.com/presentation/d/1oD1NifKZDdUJ5xhJ_Ako7Sqda1OrzBvf/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-02-20</option>
+			<option value="https://docs.google.com/presentation/d/1qxcHyrRY72-_kAEx4Z9fEyzQP3itlVeg/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-02-06</option>
+			<option value="https://docs.google.com/presentation/d/15c4_RQWyTgD-WiAp9cYThhneR6bpvGyK/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-01-27</option>
+			<option value="https://docs.google.com/presentation/d/1EG_Dku9P38rm7XvrOweU92pjNHVxMPIo/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-01-23</option>
+			<option value="https://docs.google.com/presentation/d/1QR9tYyXKhxW8DzxKkxP1a6s8u1xhC0G7/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-01-16</option>
+			<option value="https://docs.google.com/presentation/d/1_JoZkqofdIQhZlAsYSRXwR6BL744wVBI/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2024-01-09</option>
+			<option value="https://docs.google.com/presentation/d/1Nr_Fk_ZRGJKAubpmKQf97bR4MAwtKfLG/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-12-20</option>
+			<option value="https://docs.google.com/presentation/d/1fJbn5K53NckiJNl4gk6deWyuPeQS9Tqg/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-12-12</option>
+			<option value="https://docs.google.com/presentation/d/1gN9ndypepHgZ8PMx06ddiCw_m3_WLK4K/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-12-05</option>
+			<option value="https://docs.google.com/presentation/d/1ZgXV2X_v8eyqJ7d_8u2Kd-UlImtHjIsV/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-11-28</option>
+			<option value="https://docs.google.com/presentation/d/18kvZWGetuXImUupmSWrfbXAv3R5aHv5w/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-11-21</option>
+			<option value="https://docs.google.com/presentation/d/1faoBc_qrdo0R9nx8CUOBKtDg3gTiJcR3/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-11-14</option>
+			<option value="https://docs.google.com/presentation/d/1H1inF2Gx0LaHAq9KTS3yV1fq0-D8D71m/edit?usp=sharing&rtpof=true&sd=true">2023-11-07</option>
+			<option value="https://docs.google.com/presentation/d/1gMs7X9Ls__6u70XCdbyMczCn3XfmB_AX/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-10-31</option>
+			<option value="https://docs.google.com/presentation/d/1Rw497Ye-5OqyWPUrSFMw81BUg-xkPsri/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-10-24</option>
+			<option value="https://docs.google.com/presentation/d/1zVsy0JmGcgYtqwNjXnuXqb36PZnad3ri/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-10-03</option>
+			<option value="https://docs.google.com/presentation/d/1LSxHTetSMktENskgot9PwxENhuO-yez5/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-09-19</option>
+			<option value="https://docs.google.com/presentation/d/14PBAl91SuPyxwbSBq8sAd2lxKkzRwIZo/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-08-29</option>
+			<option value="https://docs.google.com/presentation/d/1n8UGyaefMY_SnzTgTtDKWkUemZBd4ZyA/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-08-15</option>
+			<option value="https://docs.google.com/presentation/d/1pjRNKMkK8wMTVMBBHP8jMP0GoGKrz8tK/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-07-25</option>
+			<option value="https://docs.google.com/presentation/d/1HRaDbeYW6r9_YSo5ECfeSLeTUkQm1UJw/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-07-21</option>
+			<option value="https://docs.google.com/presentation/d/16VZzGi-FylnwzuymEy8B4A-bry-JzAyO/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-07-12</option>
+			<option value="https://docs.google.com/presentation/d/1bjsw0aPZTdxRLWVutZX_TKt-cxwFmR7N/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-05-02</option>
+			<option value="https://docs.google.com/presentation/d/1QbCrzkX02osNxanEYfWMKFRYDb4M4K3d/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-04-25</option>
+			<option value="https://docs.google.com/presentation/d/1P1PvyXnijmPHv8aTaZ2K9Q1heYfKRzAJ/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-04-18</option>
+			<option value="https://docs.google.com/presentation/d/1JPgjuHVC9MenxDzUWausgvGhuFHR3C0D/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-04-11</option>
+			<option value="https://docs.google.com/presentation/d/1l4RMB85QxzIHp-pMkZMUN-rRGIBKqNAF/edit?usp=sharing&rtpof=true&sd=true">2023-03-28</option>
+			<option value="https://docs.google.com/presentation/d/1caZLG41usM8uAuzIHkeSlO5nt_AqBiPV/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-03-21</option>
+			<option value="https://docs.google.com/presentation/d/1PDgmKOBrF_--n-A3i3mqx13Px_ADRAJt/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-03-14</option>
+			<option value="https://docs.google.com/presentation/d/1nQ8GsVlZhqMR6vRRJTd8d8Nrs7vUbcfT/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-03-07</option>
+			<option value="https://docs.google.com/presentation/d/1UK-ID8FcHjBSTyiQ69g9SXhJ3fAen3a4/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-02-21</option>
+			<option value="https://docs.google.com/presentation/d/15tA1jwAs9PHuQFJKkwNE_dh2bWSgqzMc/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-02-14</option>
+			<option value="https://docs.google.com/presentation/d/14QYIF4OrKzxMm6LCWfAtRcsDi18QXE6F/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-02-07</option>
+			<option value="https://docs.google.com/presentation/d/1oMgH9ea1O5A_3Dxn6hzAXrvYSo5JCzEW/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-01-31</option>
+			<option value="https://docs.google.com/presentation/d/1KMEkypZgJrAZ50YSFwqWYc7fuc6VnOXA/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2023-01-10</option>
+			<option value="https://docs.google.com/presentation/d/1Z2j4ue6iDtuovS9bfKxd7NtcyrkHjqpj/edit?usp=sharing&rtpof=true&sd=true">2022-12-06</option>
+			<option value="https://docs.google.com/presentation/d/159KiQoO0pLWsB1mpexxybSRsYmENvpgs/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2022-11-29</option>
+			<option value="https://docs.google.com/presentation/d/13Fa3yi8zP9PDKn90cyEzVGPerZhuCjN5/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2022-11-22</option>
+			<option value="https://docs.google.com/presentation/d/1VZ_vphApwpGy8r0giWNI7wy3Eo1WPpn6/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2022-11-15</option>
+			<option value="https://docs.google.com/presentation/d/1XldptNaRe90Ei99PlEfzj3haa-zxF7lo/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">2022-11-08</option>
+			<option value="https://docs.google.com/presentation/d/1suR-VDdzn1u6_ZB50c-fsqM_KmvoO_PZ/edit?usp=sharing&rtpof=true&sd=true">2022-11-01</option>
+			</select>
+		    </td>
+		</tr>
+	    </table></blockquote>
+        </div>
+        <h2>Miscellanceous</h2>
+            <div>
+                <blockquote><ul>
+                    <li><a href="https://docs.google.com/presentation/d/1_ryagf2kgxK_QEXHrfen57iBdvXiAlAp/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">Quick Guide of Hscan</a></li>
+                </ul>
+		<table>
+		    <tr>
+		    <td class="tbl-cat" valign="top">Issues Analyzing:&nbsp;</td>
+		    <td class="tbl-doc">
+			<select id="user_needs" onChange="location=this.options[this.selectedIndex].value;">
+			<option value="#">Choose one ...</option>
+			<option value="https://github.com/AIxMed/BlueJay-issues/issues">Bluejay Issues (by QA team)</option>
+			<option value="https://docs.google.com/spreadsheets/d/17kVMQO4IizO5d7U92phHwGDHbaoSAebH/edit?gid=31334064#gid=31334064">Bugs/Issues list for sync up with Huron</option>
+			</select>
+		    </td>
+		    </tr>
+	        </table></blockquote>
             </div>
         </div>
     </div>
