@@ -1,0 +1,1 @@
+images for inference service
