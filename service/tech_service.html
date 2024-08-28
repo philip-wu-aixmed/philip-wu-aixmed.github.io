@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reference Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../mystyle.css" />
+    <link rel="stylesheet" type="text/css" href="../project/endpoint.css" />
+    <script type="text/javascript" src="../project/showapi.js"></script>
+</head>
+<body>
+    <!-- mega menu -->
+    <div class="menubar" id="TOPNAV">
+        <div class="logo">
+            <a href="../index.html"><img src="../images/cyto-logo.png" width="100%" /></a>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">PROJECT<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="../project/bluejay.html">BlueJay</a>
+                <a href="../project/bluedoc.html">Documentation</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">SERVICE<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="../service/tech_service.html">Customers Service</a>
+                <a href="../service/auto_service.html">Inference Service</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <!-- content -->
+    <div style="padding: 16px;">
+        <div id="product-docs">
+            <h2>AIxURO Deployment</h2>
+			<table>
+			    <tr><th>Service Senario 1</th><th>Service Senario 2</th></tr>
+				<tr>
+				    <td><ul>
+					    <li>AIxMed scan urine slides and analyze digitized slide images by AIxURO DeCart</li>
+						<li>AIxMed upload analyzed images to dedicated Google drive storage</li>
+						<li>Customer review the analyzed images using AIxURO CytoInsights
+					</ul></td>
+					<td><ul>
+					    <li>Customer scan urine slides and analyze digitized images by AIxURO DeCart in institute premises</li>
+						<li>Customer review the analyzed images using AIxURO CytoInsights</li>
+					</ul></td>
+				</tr>
+				<tr>
+				    <td><img src="img/scenario1.png" width="80%"></td>
+					<td><img src="img/scenario2.png" width="80%"></td>
+				</tr>
+			</table>
+        </div>
+            
+        <div class="functab">
+            <button class="tablinks" onmouseover="openCity(event, 'summary')">Service Summary</button>
+            <button class="tablinks" onmouseover="openCity(event, 'customer')">Deployment</button>
+        </div>
+        <div id="summary" class="tabcontent">
+            <h3>Model Inference Service for Customers</h3>
+			<table>
+			    <colgroup><col span="1" style="background-color: #D6EEEE"></colgroup>
+			    <tr><th></th><th>TUNNGS</th><th>SCMH</th></tr>
+				<tr><td><b>Total</b></td><td align="right">1,349</td><td align="right">0</td></tr>
+				<tr><td>2024</td><td align="right">509</td><td align="right">0</td></tr>
+				<tr><td>2023</td><td align="right">790</td><td align="right">n.a.</td></tr>
+				<tr><td>2022</td><td align="right">50</td><td align="right">n.a.</td></tr>
+			</table>
+        </div>
+        <div id="customer" class="tabcontent">
+            <h3>Service Deployment</h3>
+			<table>
+			    <tr><th>Institution</th><th>Delivery Date</th><th>Software Deployment</th><th>Workstation Specification</th><th>Cloud Bucket</th></tr>
+			    <tr>
+				    <td>SCMH</td>
+					<td>2024-07-04</td>
+					<td>
+					    <table border="0">
+						    <tr><td>CPU:</td><td>Intel i7-14700K 20Cores 3.4G</td></tr>
+							<tr><td>RAM:</td><td>32G</td></tr>
+							<tr><td>SSD:</td><td>1TB</td></tr>
+							<tr><td>HDD:</td><td>4TB</td></tr>
+							<tr><td>Monitor:</td><td><a href="https://www.agneovo.com/tw/products/em2701qc">AG Neovo EM2701QC</a> 2560x1440</td></tr>
+						</table>
+					</td>
+					<td>
+			            <ul class="g">
+			                <li>CytoInsights v2.3.3-RUO</li>
+			            </ul>
+					</td>
+					<td>
+					    <table border="0">
+						    <tr><td>Cloud:</td><td>Google Drive</td></tr>
+							<tr><td>User:</td><td>scmh01.c@gmail.com</td></tr>
+							<tr><td>Password:</td><td>
+						</table>
+					</td>
+				</tr>
+			    <tr>
+				    <td>TUNGS</td>
+					<td>2022-08-23</td>
+					<td>
+					    <table border="0">
+						    <tr><td>CPU:</td><td>Intel i5-12500 6Cores 3.0G</td></tr>
+							<tr><td>RAM:</td><td>16G</td></tr>
+							<tr><td>SSD:</td><td>500GB</td></tr>
+							<tr><td>HDD:</td><td>2TB</td></tr>
+							<tr><td>Monitor:</td><td>Dell 27″ 1920x1080</td></tr>
+						</table>
+					</td>
+					<td>
+			            <ul class="g">
+			                <li>CytoInsights v2.2.3-RUO <small><i>(upgraded by ShihWen, 2024-02)</i></small></li>
+							<li>CytoInsights v1.11.0-RUO</li>
+			            </ul>
+					</td>
+					<td>
+					    <table border="0">
+						    <tr><td>Bucket name:</td><td>tungsiac</td></tr>
+							<tr><td>User:</td><td>user01.tungs@gmail.com</td></tr>
+							<tr><td>Password:</td><td>5C25@xinyi5</td></tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+        </div>
+
+        <div class="clearfix"></div>
+		
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("TOPNAV");
+          if (x.className === "menubar") {
+            x.className += " responsive";
+          } else {
+            x.className = "menubar";
+          }
+        }
+    </script>
+    <!-- footer -->
+    <footer>
+        <center><font size="2">
+            <img src="../images/avatar.png" height="24" width="24" align="middle" />
+            Copyright &copy; <b>Philip Wu</b>. All Rights Reserved.</font><br>
+        <font size="1">Last Modification:<i>
+            <script language="JavaScript">
+            document.write(document.lastModified)
+            </script></i>
+        </font><br>
+        </center>
+    </footer>
+</body>
+</html>
