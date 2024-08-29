@@ -29,108 +29,163 @@
                 <a href="../service/auto_service.html">Inference Service</a>
             </div>
         </div>
+        <div class="dropdown">
+            <button class="dropbtn">INHOUSE<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="../inhouse/bk.html">Breakthrough project</a>
+                <a href="../inhouse/research.html">Research project</a>
+            </div>
+        </div>
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
 
     <!-- content -->
-    <div style="padding: 16px;">
         <div id="product-docs">
             <h2>AIxURO Deployment</h2>
-	    <table>
-	        <tr><th>Service Senario 1</th><th>Service Senario 2</th></tr>
-		<tr>
-		<td><ul>
-	            <li>AIxMed scan urine slides and analyze digitized slide images by AIxURO DeCart</li>
-		    <li>AIxMed upload analyzed images to dedicated Google drive storage</li>
-	 	    <li>Customer review the analyzed images using AIxURO CytoInsights
-		</ul></td>
-	        <td><ul>
-	            <li>Customer scan urine slides and analyze digitized images by AIxURO DeCart in institute premises</li>
-		    <li>Customer review the analyzed images using AIxURO CytoInsights</li>
-		</ul></td>
-		</tr>
-	        <tr>
-	            <td><img src="img/scenario1.png" width="80%"></td>
-		    <td><img src="img/scenario2.png" width="80%"></td>
-		</tr>
-	    </table>
+	    <p>&sext;&sext;&sext;<b>[IMPORTANT]</b> AIxMed Products should be release verified by QA team before deploying to customer premises&sext;&sext;&sext;</p>
+  	    <p>The AIxMed products announced by QA team were <b>DeCart v1.6.3</b> and <b>CytoInsights 1.12.6</b></p>
         </div>
             
         <div class="functab">
+            <button class="tablinks" onmouseover="openCity(event, 'deployment')">Service Deployment</button>
             <button class="tablinks" onmouseover="openCity(event, 'summary')">Service Summary</button>
             <button class="tablinks" onmouseover="openCity(event, 'customer')">Deployment</button>
+            <button class="tablinks" onmouseover="openCity(event, 'docs')">User Manual / Training</button>
+            <button class="tablinks" onmouseover="openCity(event, 'release')">Product Profolio</button>
+        </div>
+        <div id="deployment" class="tabcontent">
+            <h3>Scenario 1 for Customer Service</h3>
+            <ul>
+	        <li>AIxMed scan urine slides and analyze digitized slide images by AIxURO DeCart</li>
+		<li>AIxMed upload analyzed images to dedicated Google drive storage</li>
+		<li>Customer review the analyzed images using AIxURO CytoInsights</li>
+	    </ul>
+	    <img src="img/scenario1.png" width="80%" />
+            <h3>Scenario 2 for Customer Service</h3>
+	    <ul>
+	        <li>Customer scan urine slides and analyze digitized images by AIxURO DeCart in institute premises</li>
+		<li>Customer review the analyzed images using AIxURO CytoInsights</li>
+	    </ul>
+	    <img src="img/scenario2.png" width="80%" />
         </div>
         <div id="summary" class="tabcontent">
             <h3>Model Inference Service for Customers</h3>
 	    <table>
 	        <colgroup><col span="1" style="background-color: #D6EEEE"></colgroup>
-	        <tr><th></th><th>TUNGS</th><th>SCMH</th></tr>
+		<tr><th></th><th>TUNGS</th><th>SCMH</th></tr>
 		<tr><td><b>Total</b></td><td align="right">1,349</td><td align="right">0</td></tr>
-		<tr><td>2024</td><td align="right">509</td><td align="right">0</td></tr>
+	  	<tr><td>2024</td><td align="right">509</td><td align="right">0</td></tr>
 		<tr><td>2023</td><td align="right">790</td><td align="right">n.a.</td></tr>
-		<tr><td>2022</td><td align="right">50</td><td align="right">n.a.</td></tr>
+	        <tr><td>2022</td><td align="right">50</td><td align="right">n.a.</td></tr>
 	    </table>
         </div>
         <div id="customer" class="tabcontent">
             <h3>Service Deployment</h3>
 	    <table>
-	        <tr><th>Institution</th><th>Delivery Date</th><th>Software Deployment</th><th>Workstation Specification</th><th>Cloud Bucket</th></tr>
-	        <tr>
-	        <td>SCMH</td>
-		<td>2024-07-04</td>
-		<td>
-		    <table border="0">
-		    <tr><td>CPU:</td><td>Intel i7-14700K 20Cores 3.4G</td></tr>
-		    <tr><td>RAM:</td><td>32G</td></tr>
-		    <tr><td>SSD:</td><td>1TB</td></tr>
-		    <tr><td>HDD:</td><td>4TB</td></tr>
-		    <tr><td>Monitor:</td><td><a href="https://www.agneovo.com/tw/products/em2701qc">AG Neovo EM2701QC</a> 2560x1440</td></tr>
-		    </table>
-		</td>
-		<td>
-	            <ul class="g">
-	                <li>CytoInsights v2.3.3-RUO</li>
-		    </ul>
-		</td>
-		<td>
-		    <table border="0">
-		    <tr><td>Cloud:</td><td>Google Drive</td></tr>
-		    <tr><td>User:</td><td>scmh01.c@gmail.com</td></tr>
-		    <tr><td>Password:</td><td>
-		    </table>
-		</td>
-	    </tr>
-	    <tr>
-	        <td>TUNGS</td>
-		<td>2022-08-23</td>
-		<td>
-		    <table border="0">
-		    <tr><td>CPU:</td><td>Intel i5-12500 6Cores 3.0G</td></tr>
-		    <tr><td>RAM:</td><td>16G</td></tr>
-		    <tr><td>SSD:</td><td>500GB</td></tr>
-		    <tr><td>HDD:</td><td>2TB</td></tr>
-		    <tr><td>Monitor:</td><td>Dell 27″ 1920x1080</td></tr>
-		    </table>
-		</td>
-		<td>
-	            <ul class="g">
-	                <li>CytoInsights v2.2.3-RUO <small><i>(upgraded by ShihWen, 2024-02)</i></small></li>
-			<li>CytoInsights v1.11.0-RUO</li>
-	            </ul>
-		</td>
-		<td>
-		    <table border="0">
-		    <tr><td>Bucket name:</td><td>tungsiac</td></tr>
-		    <tr><td>User:</td><td>user01.tungs@gmail.com</td></tr>
-		    <tr><td>Password:</td><td>5C25@xinyi5</td></tr>
-	            </table>
-		</td>
-	        </tr>
-	    </table>
+	    
+		    <tr><th>Institution</th><th>Delivery Date</th><th>Software Deployment</th><th>Workstation Specification</th><th>Cloud Bucket</th></tr>
+		    <tr>
+		        <td>SCMH</td>
+			<td>2024-07-04</td>
+			<td>
+			    <table border="0">
+			        <tr><td>CPU:</td><td>Intel i7-14700K 20Cores 3.4G</td></tr>
+			        <tr><td>RAM:</td><td>32G</td></tr>
+			        <tr><td>SSD:</td><td>1TB</td></tr>
+			        <tr><td>HDD:</td><td>4TB</td></tr>
+			        <tr><td>Monitor:</td><td><a href="https://www.agneovo.com/tw/products/em2701qc">AG Neovo EM2701QC</a> 2560x1440</td></tr>
+			    </table>
+			</td>
+			<td>
+			    <ul class="g">
+			        <li>CytoInsights v2.3.3-RUO</li>
+			     </ul>
+			</td>
+			<td>
+			    <table border="0">
+			        <tr><td>Cloud:</td><td>Google Drive</td></tr>
+				<tr><td>User:</td><td>scmh01.c@gmail.com</td></tr>
+				<tr><td>Password:</td><td>
+			    </table>
+			</td>
+		    </tr>
+		    <tr>
+		        <td>TUNGS</td>
+			<td>2022-08-23</td>
+			<td>
+			    <table border="0">
+			        <tr><td>CPU:</td><td>Intel i5-12500 6Cores 3.0G</td></tr>
+				<tr><td>RAM:</td><td>16G</td></tr>
+				<tr><td>SSD:</td><td>500GB</td></tr>
+				<tr><td>HDD:</td><td>2TB</td></tr>
+				<tr><td>Monitor:</td><td>Dell 27″ 1920x1080</td></tr>
+			    </table>
+			</td>
+			<td>
+		            <ul class="g">
+		                <li>CytoInsights v2.2.3-RUO <small><i>(upgraded by ShihWen, 2024-02)</i></small></li>
+				<li>CytoInsights v1.11.0-RUO</li>
+		            </ul>
+			</td>
+			<td>
+			    <table border="0">
+			        <tr><td>Bucket name:</td><td>tungsiac</td></tr>
+				<tr><td>User:</td><td>user01.tungs@gmail.com</td></tr>
+				<tr><td>Password:</td><td>5C25@xinyi5</td></tr>
+			    </table>
+			</td>
+		    </tr>
+		</table>
         </div>
-
+        <div id="docs" class="tabcontent">
+            <h3>Service Documents for Customers</h3>
+	    <blockquote><table>
+                <tr>
+                    <td class="tbl-cat" valign="top">SCMH:&nbsp;</td>
+                    <td class="tbl-doc">
+                        <select id="dev_status" onChange="location=this.options[this.selectedIndex].value;">
+                        <option value="#">Please choose ...</option>
+                        <option value="https://docs.google.com/document/d/1yWWaBiukG0zH2nL9UjrVkOcpVlOUB2Ni/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">A1 AIxURO軟體出貨簽收單</option>
+                        <option value="https://docs.google.com/document/d/1zwiBSdjiRv2JFHlJYDm_bteb-fG2liWN/edit?usp=drive_link&ouid=111200483951941619394&rtpof=true&sd=true">A2 出貨明細</option>
+                        <option value="https://drive.google.com/file/d/1CkGzN11W97p6WO03PNMRXoJ6Fu_N0Xgk/view?usp=sharing">A3 使用手冊</option>
+                        <option value="https://docs.google.com/document/d/1A1F_g1ICgismf8GiOW_yH9KF4PXkdiFX/edit?usp=drive_link&ouid=111200483951941619394&rtpof=true&sd=true">A4 AIxURO軟體出貨與教育訓練時程</option>
+                        <option value="https://drive.google.com/file/d/1IqRsMcovkAO8MPr9FlVj50SRr6i2ZHid/view?usp=drive_link">A5 訓練手冊</option>
+                        <option value="https://drive.google.com/file/d/1FJrykgmUfkHEq6LXwFNiLRj1czDtjpD_/view?usp=drive_link">A6 快速指引</option>
+                        <option value="https://drive.google.com/file/d/1BLuSvFrHRBUjJFvdIQw2knEkKw_sFkcm/view?usp=drive_link">產品交付清單</option>
+                        <option value="https://docs.google.com/document/d/14AbI0IZHlGQKKsYWNmW9IOogR6yPABnBid85pC9SHic/edit?usp=drive_link">AIxURO測試報告</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tbl-cat" valign="top">TUNGS:&nbsp;</td>
+                    <td class="tbl-doc">
+                        <select id="dev_status" onChange="location=this.options[this.selectedIndex].value;">
+                        <option value="#">Please choose ...</option>
+                        <option value="https://docs.google.com/document/d/1pQJU8AB_TTYikapCxIrTzM1e-zeY3y9S/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">Checklist -- deliverables</option>
+                        <option value="https://docs.google.com/document/d/1YliARAd-6GCFH8YJ7TnRHPhphTa4plZa/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">Manual</option>
+                        <option value="https://docs.google.com/presentation/d/1dMTetXU09MB-eYWxkLTgJEcqM1KI8pbh/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">訓練手冊</option>
+                        <option value="https://docs.google.com/document/d/12am4QbwFOPhkC3LWkVM3KZ_4LbWA6Ve7/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">Quickguide</option>
+                        <option value="https://docs.google.com/document/d/1FUc8z4ja0BapIQV59p_6hRFjQgrY9C7m/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">Checklist -- Acceptance</option>
+                        <option value="https://docs.google.com/document/d/1xYqhxgVnCIKvW0mlDjIz6vPHDO7GsvQ7/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">AIxURO測試報告</option>
+                        </select>
+                    </td>
+                </tr>
+            </table></blockquote>
+        </div>
+        <div id="release" class="tabcontent">
+            <h3>Products announced by QA team</h3>
+		<table>
+		    <tr><th><b>DeCart</b></th><th>Date</th><th>CytoInsights</th><th>Date</th></tr>
+		    <tr>
+		        <td style="text-align: center">1.6.3</td>
+			<td style="text-align: center">2023-05-19</td>
+			<td style="text-align: center">1.12.6</td>
+			<td style="text-align: center">2023-05-19</td>
+		    </tr>
+		</table>
+	    <p><small>[NOTE] Engineer team <b><u>does not maintain</u></b> DeCart v1.x.x and CytoInsights v1.x.x since 2024</small></p>
+        </div>
         <div class="clearfix"></div>
-		
     </div>
     <script>
         function myFunction() {
