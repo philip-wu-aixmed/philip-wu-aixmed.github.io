@@ -34,10 +34,30 @@
 
     <!-- content -->
     <div style="padding: 16px;">
-        <div id="product-docs">
+        <div class="functab">
+            <button class="tablinks" onmouseover="openCity(event, 'overview')">Inference Service Workflow</button>
+            <button class="tablinks" onmouseover="openCity(event, 'steps')">Operation Steps</button>
+            <button class="tablinks" onmouseover="openCity(event, 'results')">Inference Results</button>
+        </div>
+        <div id="overview" class="tabcontent">
             <h2>Auto Inference Service for Clinical Team</h2>
-			<img src="../images/page3.png" width="80%" />
-
+	    <img src="../images/page3.png" width="80%" />
+        </div>
+        <div id="steps" class="tabcontent">
+            <h2>Operation Steps for Model Inference Services</h2>
+	    <div>
+	        <ul class='d'>
+		    <li>Cytotechnologists copy WSI files into dedicated folders</li>
+                    <li>Execute model inference process</li>
+                    <li>Notify cytotechnologists the analyzed images and metadata files</li>
+                    <li>upload analyzed images to dedicated cloud bucket if customer service</li>
+                    <li>backup WSI files and analyzed images into NAS</li>
+                    <li>maintain the inference results</li>				
+	
+		</ul>
+	    </div>
+        </div>
+        <div id="results" class="tabcontent">
             <h2>Summary of Model Inference Services</h2>
             <div>
                 <blockquote><ul>
