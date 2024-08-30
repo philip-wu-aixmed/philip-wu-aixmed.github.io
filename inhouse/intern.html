@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internship Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../mystyle.css" />
+    <link rel="stylesheet" type="text/css" href="../project/endpoint.css" />
+    <script type="text/javascript" src="../project/showapi.js"></script>
+</head>
+<body>
+    <!-- mega menu -->
+    <ul class="navibar">
+        <li class="navibtn"><a href="../index.html"><img src="../images/cyto-logo.png" /></a></li>
+        <li class="downdrop">
+            <a href="javascript:void(0)" class="btndrop">PROJECT</a>
+            <div class="downdrop-content">
+                <a href="../project/bluejay.html">BlueJay</a>
+                <a href="../project/bluedoc.html">Documentation</a>
+            </div>
+        </li>
+        <div class="dropdown">
+            <button class="dropbtn">SERVICE<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="../service/tech_service.html">Customers Service</a>
+                <a href="../service/auto_service.html">Inference Service</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">INHOUSE<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="../inhouse/bk.html">Breakthrough project</a>
+                <a href="../inhouse/research.html">Research project</a>
+				<a href="../inhouse/intern.html">Internship project</a>
+            </div>
+        </div>
+    </ul>
+
+    <!-- content -->
+    <div style="padding: 16px;">
+        <div id="product-docs">
+            <h1>AIxMed Internship Programs</h1>
+        </div>
+        <div class="clearfix"></div>		
+        <div class="functab">
+            <button class="tablinks" onmouseover="openCity(event, 'intern2023')">Internship Program 2023</button>
+            <button class="tablinks" onmouseover="openCity(event, 'intern2022')">Internship Program 2022</button>
+		</div>
+        <div id="intern2023" class="tabcontent">
+            <h2>Internship Programs 2023</h2>
+			<div>
+			    <ul class='d'>Estimation for Total Number of CTC
+				    <li><a href="https://drive.google.com/drive/u/0/folders/1MErpGmofeaUDGMdQ-EL5VKj4QZF39ZKL">backup materials</a></li>
+                    <li><a href="https://github.com/AIxMed/InternProjects/tree/main/intern2023/CountCTC">github repository</a></li>
+				</ul>
+			    <ul class='f'>Digital Assets Management System
+				    <li><a href="https://drive.google.com/drive/folders/19micVjjJXqUXlWAq9q6yD0WN3GLK0VOS?usp=sharing">Status Report</a></li>
+                    <li><a href="https://github.com/AIxMed/InternProjects/tree/main/intern2023/sDAMS">github repository</a></li>
+				</ul>
+			</div>
+		</div>
+        <div id="intern2022" class="tabcontent">
+            <h2>Internship Programs 2022</h2>
+			<div>
+			    <ul class='d'>Inflammatory Cells Classification and segmentation within H&E stained histology images of ulcerative colitis
+				    <li><a href="https://drive.google.com/drive/folders/1EpDmzRlhLVTScnKgO8upkgTRsILi54ej?usp=sharing">backup materials</a></li>
+                    <li><a href="https://github.com/AIxMed/InternProjects/tree/main/intern2022/LeucocytesCounting">github repository</a></li>
+				</ul>
+			</div>
+		</div>
+        <div class="clearfix"></div>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("TOPNAV");
+          if (x.className === "menubar") {
+            x.className += " responsive";
+          } else {
+            x.className = "menubar";
+          }
+        }
+    </script>
+    <!-- footer -->
+    <footer>
+        <center><font size="2">
+            <img src="../images/avatar.png" height="24" width="24" align="middle" />
+            Copyright &copy; <b>Philip Wu</b>. All Rights Reserved.</font><br>
+        <font size="1">Last Modification:<i>
+            <script language="JavaScript">
+            document.write(document.lastModified)
+            </script></i>
+        </font><br>
+        </center>
+    </footer>
+</body>
+</html>
