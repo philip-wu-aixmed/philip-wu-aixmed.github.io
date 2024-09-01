@@ -57,12 +57,41 @@
 	    <div>
 	        <ul class='c'>
 		    <li>Cytotechnologists copy WSI files into dedicated folders</li>
+			- dedicated folders are located in \\SS7922\autoinference<br>
+			- cytotechnologists copy WSI filese into specific folder for specific purpose
+			<ul class="d">
+			    <li>folder {model version}_{decart versoin} is for model inference using dedicated version of AI model</li>
+			    <li>folder tungs is dedicated for urine slides from TUNGS</li>
+			    <li>folder ShihWen is for specified purpose defined by cytotechnologist</li>
+			</ul>
                     <li>Execute model inference process</li>
+			- move WSI files from dedicated folder to the working folder in inference service PC \\SATURN-WIN<br>
+			- execute python programs to model inference on working folder<br>
+			<div class="note-code">
+			    .\done\*.med:    image files for viewing by CytoInsights<br>
+			    .\done\*.aix:    analyzed metadata by model<br>
+			    dc-results-{timestamp}.csv:    summary of analyzed metadata for cytotechnologists review<br>
+			</div>
                     <li>Notify cytotechnologists the analyzed images and metadata files</li>
                     <li>upload analyzed images to dedicated cloud bucket if customer service</li>
+			- for TUNGS<br>
+			<div class="note-code">
+			    set cloud bucket to TOKYO\tungsiac by executing <b>decart -s</b> in CMD window<br>
+			    move *.med and *.aix files into DeCart watch folder<br>
+			</div>
+			- for SCMH<br>
+			<div class="note-code">
+			    login Google Drive using SCMH account <b>scmh01.c@gmail.com</b><br>
+			    copy *med and *.aix files into Google Drive<br>
+			</div>
                     <li>backup WSI files and analyzed images into NAS</li>
-                    <li>maintain the inference results</li>				
-	
+			- backup WSI files and *.med/*.aix files into NAS \\aixmedstorage\\Auto Inference Backup<br>
+                    <li>maintain the inference results</li>
+			- append dc-results-{timestamp}.csv into summary file for cytotechnologist or customers
+			<ul class="d">
+			    <li><a = href="https://docs.google.com/spreadsheets/d/1IKRZP1HcC3TC8KTMi8Xfgtbel_KvCYmS/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true"></a>sumary for TUNGS</li>
+			    <li><a href="https://docs.google.com/spreadsheets/d/1yZ_G_8_ZHIf0go2vv1fr5Kcge0Ebjn14/edit?usp=sharing&ouid=111200483951941619394&rtpof=true&sd=true">model inference summary</a></li>
+			</ul>
 		</ul>
 	    </div>
         </div>
