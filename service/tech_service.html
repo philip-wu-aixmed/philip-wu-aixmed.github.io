@@ -52,6 +52,7 @@
             <button class="tablinks" onmouseover="openCity(event, 'customer')">Deployment</button>
             <button class="tablinks" onmouseover="openCity(event, 'docs')">User Manual / Training</button>
             <button class="tablinks" onmouseover="openCity(event, 'release')">Product Profolio</button>
+            <button class="tablinks" onmouseover="openCity(event, 'qcreference')">QC process workflow</button>
         </div>
         <div id="deployment" class="tabcontent">
             <h3>Scenario 1 for Customer Service</h3>
@@ -125,6 +126,17 @@
 		    </tr>
 		</table>
 	    <p><small>[NOTE] Engineer team <b><u>does not maintain</u></b> DeCart v1.x.x and CytoInsights v1.x.x since 2024</small></p>
+        </div>
+        <div id="qcreference" class="tabcontent">
+            <h3>Process Workflow for QC Reference</h3>
+			A fully automatic processes from slide image digitalization, AI model analysis to provide analysis results for QC reference
+            <ul> Features:
+	            <li><b>Auto Model Inference</b>: copy scanned slide images from scanner workstation to model server, analyze images by AI model</li>
+		        <li><b>Analyzed Result for QC</b>: prepare metadata based on QC criteria</li>
+		        <li><b>Backup Image Files</b>: move slide images to specified image storage</li>
+				<li><b>Restful API for QC</b>: provide APIs for querying QC results</li>
+	        </ul>
+	        <img src="img/qcprocesswotkflow.png" width="80%" />
         </div>
         <div class="clearfix"></div>
     </div>
